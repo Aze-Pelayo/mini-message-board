@@ -1,0 +1,18 @@
+extends layout 
+
+block content 
+    h1= title
+    form(method="POST" action="/new")
+        label(for="author") What's Your Name
+        input(
+            type="text"
+            name="author"
+        )
+        label(for="message") Enter your message
+        textarea(
+            name="message", 
+            cols="30", 
+            rows="10") 
+        button(
+            type="submit"
+        ) Submit
